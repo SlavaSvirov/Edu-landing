@@ -11,10 +11,26 @@ a
   left: 0
   width: 100%
   min-height: 880px
-  background: #6500ff
-  background-size: cover
+  background: #6500ff url(../img/background.png) no-repeat center
+
+  background-position: bottom
+  // background-size: cover
 
 .container
-  width: 1270px
+  width: 75%
+  max-width: 1200px
   margin: auto
   color: white
+
+@media (max-width: 1199px)
+  .container
+    max-width: 960px
+
+@media (max-width: 991px)
+  .container
+    max-width: 750px
+
+@media (max-width: 768px)
+  .container
+    max-width: 100%
+    padding: 0 30px

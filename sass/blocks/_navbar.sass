@@ -1,21 +1,31 @@
 
 .navbar
+    margin-top: 50px
     &-wrap
         display: flex
         justify-content: space-between
         align-items: center
         min-height: 50px
-        border: 1px solid red
-    &__logo
-        margin-right: 380px
+
+    &__btn
+        margin-left: 110px
 .list
     display: flex
     justify-content: space-between
-    list-style: none
-    flex-wrap: wrap
-    padding-left: 20px
-    &:last-child
-        margin-right: 110px
+    margin-left: auto
     &__item
-        margin-left: 58px
+        margin-left: 5%
         font-size: 18px
+
+@media (max-width: 768px)
+    .header
+        line-height: 2
+    .navbar
+        &-wrap
+            flex-direction: column
+            align-items: flex-start
+        &__list
+            flex-direction: column
+            margin: 0
+        &__btn
+            margin-left: 0
