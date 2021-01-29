@@ -8,18 +8,18 @@ a {
   color: white; }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   min-height: 880px;
   background: #6500ff url(../img/background.png) no-repeat center;
   background-position: bottom; }
 
+.main {
+  min-height: 1000px; }
+
 .container {
   width: 75%;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1350px;
+  margin: 0 auto;
   color: white; }
 
 @media (max-width: 1199px) {
@@ -37,7 +37,11 @@ body {
 
 .button {
   width: 120px;
-  height: 45px;
+  text-align: center;
+  padding: 13px 32px;
+  border: none;
+  font-size: 18px;
+  display: inline-block;
   border-radius: 23px;
   background-color: #ff5f60;
   color: white;
@@ -46,14 +50,15 @@ body {
     margin: 10px; }
 
 .navbar {
-  margin-top: 50px; }
+  padding-top: 50px; }
   .navbar-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 50px; }
   .navbar__btn {
-    margin-left: 110px; }
+    margin-left: 110px;
+    margin-right: 100px; }
 
 .list {
   display: flex;
@@ -78,48 +83,47 @@ body {
 .hero {
   display: flex;
   margin-top: 150px; }
-  .hero-wrap {
+  .hero-text {
     padding-top: 100px;
     display: flex;
     flex-direction: column; }
-    .hero-wrap__title {
+    .hero-text__title {
       font-size: 70px;
       line-height: 75px;
       font-family: "Raleway", sans-serif;
+      font-weight: bold;
       margin: 0; }
-    .hero-wrap__subtitle {
+    .hero-text__subtitle {
       margin-top: 30px;
       margin-bottom: 50px;
       line-height: 30px;
       margin-right: 45px; }
-    .hero-wrap__btn {
-      font-weight: bold; }
-  .hero__figure {
-    position: absolute;
-    z-index: -1; }
-    .hero__figure__circle {
-      left: 20;
-      top: 15%; }
-    .hero__figure__triangle {
-      top: 20;
-      left: 50%; }
+    .hero-text__btn {
+      font-weight: boldw;
+      width: 150px; }
+  .hero img {
+    width: 100%;
+    height: auto; }
 
 @media (max-width: 1199px) {
   .hero {
-    flex-direction: column; }
-    .hero-wrap {
-      padding-top: 0;
-      width: 500px; }
-      .hero-wrap__title {
-        font-size: 40px; } }
+    flex-direction: column;
+    align-items: center; }
+    .hero-text {
+      align-items: center;
+      padding: 30px 0; }
+      .hero-text__title {
+        font-size: 40px; }
+      .hero-text__subtitle {
+        max-width: 300px;
+        text-align: center;
+        margin: 0; } }
 @media (max-width: 950px) {
   .hero {
     align-items: center; }
     .hero-wrap {
       align-items: center;
       line-height: 30px; }
-      .hero-wrap__btn {
-        display: inline; }
       .hero-wrap__subtitle {
         margin-bottom: 30px;
         text-align: center;
@@ -132,5 +136,33 @@ body {
     margin-top: 0; }
     .hero__bg {
       margin-top: 121px; } }
+.main__slider {
+  width: 539px;
+  height: 155px;
+  border: 1px solid red; }
+.main__content {
+  display: flex; }
+  .main__content__image {
+    width: 572px;
+    height: 499px; }
+  .main__content__text {
+    min-width: 520px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: black;
+    font-family: "Raleway", sans-serif; }
+    .main__content__text__header {
+      font-size: 36px; }
+    .main__content__text__description {
+      color: #8c8c8c;
+      font-size: 18px; }
+  .main__content_first {
+    margin-top: 250px; }
+  .main__content_second {
+    padding-top: 160px; }
+.main_first {
+  background: #ffffff url(../img/man-woman-bg.png) no-repeat center;
+  background-position: 60% 100px; }
 
 /*# sourceMappingURL=style.css.map */
