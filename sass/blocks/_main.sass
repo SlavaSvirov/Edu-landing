@@ -1,8 +1,30 @@
 .main
+
+    color: black
     &__slider
         width: 539px
         height: 155px
         border: 1px solid red
+    &__form
+        position: absolute
+        width: 400px
+        height: 255px
+        left: 93px
+        top: -72px
+        background-color: #ff5f60
+        border-radius: 10px
+        color: white
+        &__wrapper
+            padding: 50px 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+        &__title
+            font-size: 30px
+        &__subtitle
+            font-size: 20px
+            opacity: 0.5
     &__content
         display: flex
         justify-content: space-between
@@ -23,6 +45,7 @@
                 font-size: 18px
         &_first
             margin-top: 250px
+
         &_second
             padding-top: 160px
     &__text
@@ -32,6 +55,7 @@
     &_first
         background: #ffffff url(../img/man-woman-bg.png) no-repeat center
         background-position: 60% 100px
+        position: relative
 
 @media (max-width: 1199px)
     .main

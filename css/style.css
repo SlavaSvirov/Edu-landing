@@ -11,6 +11,7 @@ a {
   width: 100%;
   min-height: 880px;
   background: #6500ff url(../img/background.png) no-repeat center;
+  color: white;
   background-position: bottom; }
 
 .main {
@@ -19,8 +20,7 @@ a {
 .container {
   width: 75%;
   max-width: 1350px;
-  margin: 0 auto;
-  color: white; }
+  margin: 0 auto; }
 
 @media (max-width: 1199px) {
   .container {
@@ -47,6 +47,13 @@ body {
   font-family: "Raleway", sans-serif; }
   .button span {
     margin: 10px; }
+
+input {
+  border-radius: 23px;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 50px; }
 
 .navbar {
   padding-top: 50px; }
@@ -127,37 +134,60 @@ body {
     margin-top: 0; }
     .hero__bg {
       margin-top: 30px; } }
-.main__slider {
-  width: 539px;
-  height: 155px;
-  border: 1px solid red; }
-.main__content {
-  display: flex;
-  justify-content: space-between; }
-  .main__content__image {
-    width: 572px;
-    height: 499px; }
-  .main__content__text {
-    max-width: 520px;
+.main {
+  color: black; }
+  .main__slider {
+    width: 539px;
+    height: 155px;
+    border: 1px solid red; }
+  .main__form {
+    position: absolute;
+    width: 400px;
+    height: 255px;
+    left: 93px;
+    top: -72px;
+    background-color: #ff5f60;
+    border-radius: 10px;
+    color: white; }
+    .main__form__wrapper {
+      padding: 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+    .main__form__title {
+      font-size: 30px; }
+    .main__form__subtitle {
+      font-size: 20px;
+      opacity: 0.5; }
+  .main__content {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    color: black;
-    font-family: "Raleway", sans-serif; }
-    .main__content__text__header {
-      font-size: 36px; }
-    .main__content__text__description {
-      color: #8c8c8c;
-      font-size: 18px; }
-  .main__content_first {
-    margin-top: 250px; }
-  .main__content_second {
-    padding-top: 160px; }
-.main__text__btn {
-  width: 150px; }
-.main_first {
-  background: #ffffff url(../img/man-woman-bg.png) no-repeat center;
-  background-position: 60% 100px; }
+    justify-content: space-between; }
+    .main__content__image {
+      width: 572px;
+      height: 499px; }
+    .main__content__text {
+      max-width: 520px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      color: black;
+      font-family: "Raleway", sans-serif; }
+      .main__content__text__header {
+        font-size: 36px; }
+      .main__content__text__description {
+        color: #8c8c8c;
+        font-size: 18px; }
+    .main__content_first {
+      margin-top: 250px; }
+    .main__content_second {
+      padding-top: 160px; }
+  .main__text__btn {
+    width: 150px; }
+  .main_first {
+    background: #ffffff url(../img/man-woman-bg.png) no-repeat center;
+    background-position: 60% 100px;
+    position: relative; }
 
 @media (max-width: 1199px) {
   .main__content {
