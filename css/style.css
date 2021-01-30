@@ -36,7 +36,6 @@ body {
   font-family: "Poppins", sans-serif; }
 
 .button {
-  width: 120px;
   text-align: center;
   padding: 13px 32px;
   border: none;
@@ -69,9 +68,6 @@ body {
     font-size: 18px; }
 
 @media (max-width: 768px) {
-  .header {
-    line-height: 2; }
-
   .navbar-wrap {
     flex-direction: column;
     align-items: flex-start; }
@@ -99,11 +95,8 @@ body {
       line-height: 30px;
       margin-right: 45px; }
     .hero-text__btn {
-      font-weight: boldw;
+      font-weight: bold;
       width: 150px; }
-  .hero img {
-    width: 100%;
-    height: auto; }
 
 @media (max-width: 1199px) {
   .hero {
@@ -119,34 +112,33 @@ body {
         text-align: center;
         margin: 0; } }
 @media (max-width: 950px) {
-  .hero {
-    align-items: center; }
-    .hero-wrap {
-      align-items: center;
-      line-height: 30px; }
-      .hero-wrap__subtitle {
-        margin-bottom: 30px;
-        text-align: center;
-        margin-right: 0; }
-    .hero img {
-      margin-top: 35px;
-      width: 300px; } }
+  .hero-wrap {
+    align-items: center;
+    line-height: 30px; }
+    .hero-wrap__subtitle {
+      margin-bottom: 30px;
+      text-align: center;
+      margin-right: 0; }
+  .hero img {
+    margin-top: 35px;
+    width: 300px; } }
 @media (max-width: 768px) {
   .hero {
     margin-top: 0; }
     .hero__bg {
-      margin-top: 121px; } }
+      margin-top: 30px; } }
 .main__slider {
   width: 539px;
   height: 155px;
   border: 1px solid red; }
 .main__content {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .main__content__image {
     width: 572px;
     height: 499px; }
   .main__content__text {
-    min-width: 520px;
+    max-width: 520px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -161,8 +153,30 @@ body {
     margin-top: 250px; }
   .main__content_second {
     padding-top: 160px; }
+.main__text__btn {
+  width: 150px; }
 .main_first {
   background: #ffffff url(../img/man-woman-bg.png) no-repeat center;
   background-position: 60% 100px; }
+
+@media (max-width: 1199px) {
+  .main__content {
+    flex-direction: column;
+    align-items: center; }
+    .main__content__text {
+      text-align: center;
+      align-items: center; }
+    .main__content * {
+      margin-top: 20px; }
+    .main__content_first {
+      margin-top: 100px; }
+    .main__content_second {
+      padding-top: 0; }
+    .main__content__image {
+      width: auto;
+      height: auto; } }
+@media (max-width: 950px) {
+  .main__content img {
+    width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */

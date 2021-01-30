@@ -5,12 +5,12 @@
         border: 1px solid red
     &__content
         display: flex
+        justify-content: space-between
         &__image
             width: 572px
             height: 499px
-
         &__text
-            min-width: 520px
+            max-width: 520px
             display: flex
             justify-content: space-between
             flex-direction: column
@@ -25,7 +25,34 @@
             margin-top: 250px
         &_second
             padding-top: 160px
+    &__text
+        &__btn
+            width: 150px
 
     &_first
         background: #ffffff url(../img/man-woman-bg.png) no-repeat center
         background-position: 60% 100px
+
+@media (max-width: 1199px)
+    .main
+        &__content
+            flex-direction: column
+            align-items: center
+            &__text
+                text-align: center
+                align-items: center
+            & *
+                margin-top: 20px
+            &_first
+                margin-top: 100px
+            &_second
+                padding-top: 0
+            &__image
+                width: auto
+                height: auto
+@media (max-width: 950px)
+    .main
+        &__content
+            img
+                width: 300px
+@media (max-width: 768px)
