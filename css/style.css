@@ -71,12 +71,14 @@ input {
   .navbar__list {
     display: flex;
     justify-content: space-between;
-    margin-left: auto; }
+    width: 100%; }
     .navbar__list__item {
       margin-left: 5%;
       font-size: 18px; }
+  .navbar__logo {
+    margin-right: 20%; }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar-wrap {
     flex-direction: column;
     align-items: flex-start; }
@@ -213,10 +215,10 @@ input {
     display: flex;
     justify-content: space-between; }
     .main__content__image {
-      min-width: 50%;
+      max-width: 45%;
       height: 500px; }
     .main__content__text {
-      max-width: 50%;
+      max-width: 45%;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -231,15 +233,13 @@ input {
       margin-top: 250px; }
     .main__content_second {
       padding-top: 160px; }
-    .main__content :last-child {
-      padding-left: 30px; }
     .main__content img {
       width: 100%; }
   .main__text__btn {
     width: 150px; }
   .main_first {
     background: #ffffff url(../img/man-woman-bg.png) no-repeat center;
-    background-position: 60% 100px;
+    background-position: 93% 100px;
     position: relative; }
 
 @media (max-width: 1550px) {
