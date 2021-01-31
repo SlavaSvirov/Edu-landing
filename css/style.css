@@ -68,14 +68,13 @@ input {
   .navbar__btn {
     margin-left: 110px;
     margin-right: 100px; }
-
-.list {
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto; }
-  .list__item {
-    margin-left: 5%;
-    font-size: 18px; }
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto; }
+    .navbar__list__item {
+      margin-left: 5%;
+      font-size: 18px; }
 
 @media (max-width: 768px) {
   .navbar-wrap {
@@ -84,8 +83,11 @@ input {
   .navbar__list {
     flex-direction: column;
     margin: 0; }
+    .navbar__list__item {
+      margin-top: 10px; }
   .navbar__btn {
-    margin-left: 0; } }
+    margin-left: 0;
+    margin-top: 10px; } }
 .hero {
   display: flex;
   margin-top: 150px; }
@@ -114,7 +116,9 @@ input {
     align-items: center; }
     .hero-text {
       align-items: center;
-      padding: 30px 0; }
+      padding: 30px; }
+      .hero-text__btn {
+        margin-top: 20px; }
       .hero-text__title {
         font-size: 40px; }
       .hero-text__subtitle {
@@ -130,7 +134,6 @@ input {
       text-align: center;
       margin-right: 0; }
   .hero img {
-    margin-top: 35px;
     width: 300px; } }
 @media (max-width: 768px) {
   .hero {
@@ -210,10 +213,10 @@ input {
     display: flex;
     justify-content: space-between; }
     .main__content__image {
-      width: 572px;
-      height: 499px; }
+      min-width: 50%;
+      height: 500px; }
     .main__content__text {
-      max-width: 520px;
+      max-width: 50%;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -228,6 +231,10 @@ input {
       margin-top: 250px; }
     .main__content_second {
       padding-top: 160px; }
+    .main__content :last-child {
+      padding-left: 30px; }
+    .main__content img {
+      width: 100%; }
   .main__text__btn {
     width: 150px; }
   .main_first {
@@ -268,10 +275,12 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 217px; }
+  margin-top: 217px;
+  padding: 0 20px; }
   .education__item {
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
     align-items: center;
     max-width: 322px; }
     .education__item__title {
@@ -303,14 +312,16 @@ input {
   .company-info__nav {
     display: flex;
     justify-content: space-between;
-    min-width: 600px; }
+    padding-left: 277px;
+    width: 100%; }
 
 @media (max-width: 1199px) {
   .company-info__safe-info {
     display: flex;
     flex-direction: column; }
     .company-info__safe-info__nav {
-      min-width: auto; }
+      padding: 0;
+      width: 50%; }
 
   .nav__link {
     margin-right: 20px; } }

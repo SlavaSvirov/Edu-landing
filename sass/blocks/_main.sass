@@ -67,15 +67,14 @@
                 right: 22px
                 background: url('../img/telegram.png') no-repeat
                 background-size: cover
-
     &__content
         display: flex
         justify-content: space-between
         &__image
-            width: 572px
-            height: 499px
+            min-width: 50%
+            height: 500px
         &__text
-            max-width: 520px
+            max-width: 50%
             display: flex
             justify-content: space-between
             flex-direction: column
@@ -90,6 +89,10 @@
             margin-top: 250px
         &_second
             padding-top: 160px
+        & :last-child
+            padding-left: 30px
+        img
+            width: 100%
     &__text
         &__btn
             width: 150px
